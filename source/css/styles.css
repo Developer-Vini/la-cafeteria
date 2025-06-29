@@ -1,0 +1,348 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    padding: 9px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header img {
+    margin-right: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+header.scrolled {
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.5) 15px 15px 30px;
+}
+
+nav a {
+    color: white;
+    letter-spacing: 1px;
+    margin: 5px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+nav ul a:hover {
+    color: #a57756;
+    transform: scale(1.1);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textos {
+    color: white;
+    width: 50%;
+    margin: 59px;
+    margin-left: 9%;
+    position: relative;
+    z-index: 2;
+}
+
+.textos h1 {
+    color: white;
+    font-size: 3.6rem;
+}
+
+.textos span span {
+    color: #6F4E37;
+}
+
+.textos span {
+    color: #ad7953;
+}
+
+.textos p {
+    font-size: 15px;
+}
+
+.textos button {
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ad7953;
+    border-radius: 20px;
+    background-color: #a57756;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.textos button:hover {
+    background-color: #6F4E37;
+    transform: scaleX(0.9);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+}
+
+.card {
+    background-color: #f1cdb2;
+    border: 1px solid #6F4E37;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #6b3e26;
+}
+
+.card h3 {
+    margin: 0;
+    color: #6b3e26;
+    font-size: 1.1em;
+}
+
+.card p {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.estrelas {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.avaliacoes span {
+    color: #571e00;
+}
+
+.card button {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #563727;
+}
+
+.avaliacoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+}
+
+.avaliacoes h2 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #6b3e26;
+}
+
+.produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+}
+
+.produtos h2 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #6b3e26;
+}
+
+.produtos span {
+    color: #ad7953;
+}
+
+.map {
+    text-align: center;
+    margin: 50px;
+}
+
+.map h1 {
+    color: #6b3e26;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.map>iframe {
+    background: black;
+    border: none;
+    height: 450px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.menu-toggle {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+footer h4 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: #a57756;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: transparent;
+        width: 200px;
+        height: 240px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        padding-top: 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.7);
+        border-radius: 8px 0 0 8px;
+        z-index: 999;
+    }
+
+    nav.show {
+        transform: translateX(0);
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    nav ul a {
+        font-size: 1.1rem;
+    }
+
+    .textos {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .textos h1 {
+        font-size: 2rem;
+    }
+
+    .textos p {
+        font-size: 0.95rem;
+    }
+
+    .textos button {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .map h1 {
+        font-size: 1.5em;
+    }
+}
