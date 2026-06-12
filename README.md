@@ -1,7 +1,7 @@
 # ☕ CAFENA
 
 **CAFENA** é o site oficial fictício de uma cafeteria moderna feita especialmente para quem ama café e programação.  
-Com um visual escuro, tipografia elegante e uma pitada de `<Code>`, este projeto foidesenvolvido com foco em **responsividade**, **estilo minimalista** e **boa experiência de usuário**.
+Com um visual escuro, tipografia elegante e uma pitada de `<Code>`, este projeto foi desenvolvido com foco em **responsividade**, **estilo minimalista** e **boa experiência de usuário**.
 
 ---                                 
 ## 🖼️ Preview
